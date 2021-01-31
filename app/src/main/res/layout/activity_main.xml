@@ -49,7 +49,7 @@
         android:layout_width="343dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
-        android:text="Primer Numero"
+        android:text="Segundo Numero"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
