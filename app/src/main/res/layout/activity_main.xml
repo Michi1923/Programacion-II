@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Calculadora Basica"
+        android:textSize="70px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Respuesta: "
+        android:textSize="50px"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNum2"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Primer Numero"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Primer Numero"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNum1"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="136dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="56dp"
+        android:background="#00009688"
+        android:gravity="center_horizontal"
+        android:onClick="Calcular"
+        android:text="Calcular"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#D83CA340"
+        app:iconTint="#002196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cboOperaciones"
+        app:layout_constraintTop_toBottomOf="@+id/lblRespuesta"
+        app:strokeColor="#00E91E63" />
+
+    <Spinner
+        android:id="@+id/cboOperaciones"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:entries="@array/Operaciones"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblRespuesta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
